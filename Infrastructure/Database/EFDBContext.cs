@@ -15,4 +15,7 @@ public class EFDBContext : DbContext, IDbContext
         modelBuilder.ApplyConfiguration(new CandleMap());
         modelBuilder.ApplyConfiguration(new PivotMap());
     }
+    
+    protected override void OnConfiguring(DbContextOptionsBuilder options)
+        => options.UseSqlServer("Server= . ;Database=pivot_bank_db;Integrated Security = sspi;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=True");
 }
