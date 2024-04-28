@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playgounds", "Playgounds\Playgounds.csproj", "{FA4596DF-934F-4FE5-9A7F-09F9FFEC6EBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetArch.Test", "NetArch.Test\NetArch.Test.csproj", "{CEE23B57-EAD1-417C-9620-13D4722F9082}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{13873480-76EF-4899-94F4-57111ED5BFB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{FA4596DF-934F-4FE5-9A7F-09F9FFEC6EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA4596DF-934F-4FE5-9A7F-09F9FFEC6EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA4596DF-934F-4FE5-9A7F-09F9FFEC6EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE23B57-EAD1-417C-9620-13D4722F9082}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE23B57-EAD1-417C-9620-13D4722F9082}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE23B57-EAD1-417C-9620-13D4722F9082}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE23B57-EAD1-417C-9620-13D4722F9082}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13873480-76EF-4899-94F4-57111ED5BFB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13873480-76EF-4899-94F4-57111ED5BFB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13873480-76EF-4899-94F4-57111ED5BFB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13873480-76EF-4899-94F4-57111ED5BFB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

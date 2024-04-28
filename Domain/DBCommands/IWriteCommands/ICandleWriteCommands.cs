@@ -1,6 +1,8 @@
-﻿namespace Domain.DBCommands.IWriteCommands;
+﻿using Domain.Models;
 
-public class ICandleWriteCommands
+namespace Domain.DBCommands.IWriteCommands;
+
+public interface ICandleWriteCommands
 {
-    
+    public Task<Candle> AddCandles(List<Candle> candles);
 }

@@ -2,5 +2,7 @@
 
 public class Config
 {
+    public bool IsFirstRun { get; }
+    
     
 }

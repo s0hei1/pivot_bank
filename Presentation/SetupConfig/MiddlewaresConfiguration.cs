@@ -1,4 +1,6 @@
-﻿namespace Presentation.Setup.Startup;
+﻿using Presentation.Middlewares;
+
+namespace Presentation.Setup.Startup;
 
 public class MiddlewaresConfiguration : IStartupFilter
 {
@@ -6,7 +8,14 @@ public class MiddlewaresConfiguration : IStartupFilter
     => builder =>
     {
         builder.UseAuthentication();
+
+        builder.UseMiddleware<CheckSomethingMiddleware>();
+        
+        var isDevelopment = Environment.GetEnvironmentVariable(EnvironmentVariables.IsDevelopment);
+        
         next(builder);
     };
+    
+    
     
 }

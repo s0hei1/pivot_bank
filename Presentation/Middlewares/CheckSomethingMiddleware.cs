@@ -1,11 +1,17 @@
-﻿namespace Presentation.Middlewares;
+﻿using Application.HelperExtensions;
 
-public class CheckSomethingMiddaleware
+namespace Presentation.Middlewares;
+
+public class CheckSomethingMiddleware(RequestDelegate next)
 {
-    private readonly RequestDelegate _next;
-
-    public CheckSomethingMiddaleware(RequestDelegate next)
+    public async Task Invoke(HttpContext httpContext)
     {
-        _next = next;
+        
+        var somethingHeader = httpContext.Request.Headers["Something"];
+
+        if (string.IsNullOrWhiteSpace(somethingHeader).Not())
+            throw new Exception();
+
+        await next(httpContext);
     }
 }

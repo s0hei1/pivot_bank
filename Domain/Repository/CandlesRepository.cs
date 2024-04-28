@@ -1,6 +1,6 @@
 ﻿namespace Domain.Repository;
 
-public class CandlesRepository
+internal class CandlesRepository
 {
     
 }
